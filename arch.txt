@@ -1,0 +1,22 @@
+rm -rf ~/.config/*
+rm -rf ~/.local/*
+rm -rf ~/.themes/*
+rm -rf ~/.icons/*
+rm -rf ~/.zshrc
+
+
+cp -r .config/* ~/.config/
+cp -r .local/share/* ~/.local/share/
+cp -r .themes/Gruvminimal ~/.themes/
+cp -r .icons/* ~/.icons/
+cp .zshrc ~/
+
+
+systemctl --user restart hyprland
+
+
+
+sudo pacman -S rofi alacritty neovim picom
+
+
+sudo pacman -S kvantum dunst eww kitty neofetch qt5ct qt6ct rofi waybar wlogout swww
